@@ -1,0 +1,20 @@
+[project]
+name = "jev-linkedin"
+version = "0.1.0"
+description = "Jev-driven browser workflows with persistent evidence and contextual DOM observations"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["browser-harness==0.1.13", "httpx[http2]>=0.28,<1"]
+[project.scripts]
+jev-linkedin = "jev_linkedin.cli:main"
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[dependency-groups]
+dev = ["pytest>=8.4,<9", "ruff>=0.14,<1", "playwright>=1.50,<2"]
+[tool.ruff]
+line-length = 120
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]

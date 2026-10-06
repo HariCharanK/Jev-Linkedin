@@ -1,0 +1,9 @@
+{
+  "company": "Mercor",
+  "start_url": "https://www.linkedin.com/company/mercor-ai/",
+  "text_candidates": [],
+  "max_invitations": 3,
+  "max_steps": 100,
+  "min_confidence": 0.85,
+  "no_progress_limit": 4
+}
